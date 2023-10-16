@@ -1,0 +1,212 @@
+/* body  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar  */
+#navbar {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+}
+
+/* navbar : logo */
+#logo {
+    margin: 2px 2px;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+    margin: 3px 20px;
+}
+
+/* unlisted item */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai';
+    font-size: 22px;
+
+}
+
+/* that background black colour strip is due to this only very imp */
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul li {
+    list-style: none;
+    /*that bindu nhi ayenge aab */
+    font-size: medium;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    /*bcz by default inline aste now due to flex and for givng padding we need block element only*/
+    padding: 3px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    /* underline due to a tag chali jayegi*/
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* section styling */
+
+#home {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 300px;
+    height: 400px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* for setting bg image psudo selector used */
+#home::before {
+
+    content: " ";
+    background: url("cake.jpg") no-repeat center center/cover;
+    /*repeatition of image stop*/
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+/* home section*/
+#home h1 {
+
+    text-align: center;
+    font-size: 3.8em;
+    color: white;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.0rem;
+    color: white;
+    font-family: 'Baloo Bhai';
+}
+
+/* services section */
+#services {
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 10px 50px;
+    padding: 5px 50px;
+    border-radius: 23px;
+    background-color: #e7d6d6;
+
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* clients section  */
+
+#client-section {
+    height: 100px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#clients img{
+  height: 100px;
+
+}
+
+.class-item{
+    padding: 45px;
+    
+}
+
+#client-section::before{
+    content: " ";
+    background: url(pizza.jpg)no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* copyright */
+footer{
+   text-align: center;
+    color: black;
+    padding: 6px 50px;
+}
+
+
+/* creating utility class */
+.h-primary {
+    font-size: 3.2rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai';
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai';
+}
+
+.btn {
+    padding: 6px 20px;
+    font-size: 1.2rem;
+    background-color: brown;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    margin: 5px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* to make hand gesture cmome when i come to that buttun */
+
+}
+
+.center {
+    text-align: center;
+}
